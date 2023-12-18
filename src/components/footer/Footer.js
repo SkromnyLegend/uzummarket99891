@@ -48,8 +48,8 @@ function Footer() {
                 <li className='footerliitems'>Uzum в соцсетях</li>
 
                 <div className="instagrauzum">
-                <li className='footerliitems1'><FaInstagram className="insta"/></li>
-                <li className='footerliitems1'><FaTelegram className="teg"/></li>
+             <a href="https://instagram.com/skromny_legend"><li className='footerliitems1'><FaInstagram className="insta"/></li></a>   
+               <a href="https://t.me/muhammadamin_o1"><li className='footerliitems1'><FaTelegram className="teg"/></li></a> 
                 <li className='footerliitems1'><FaYoutube className="yt"/></li>
                 <li className='footerliitems1'><FaFacebookSquare className="fc"/></li>
                 </div>
