@@ -1,0 +1,133 @@
+.Footer{
+    width: 100%;
+    height: 300px;
+    background: #FFFFFF;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+}
+.instagrauzum{
+    display: flex;
+    gap: 10px;
+}
+.footerliitems h2{
+    color: #222;
+    font-size: 16px;    
+}
+.footerliitems{
+    color: gray;
+}
+.footerliitems svg{
+    font-size: 20px;
+}
+.instagrauzum .footerliitems svg{
+    font-size: 20px;
+}
+.footerbtn{
+    background: #F2F4F7;
+    color: #222;
+    width: 650px;
+    height: 55px;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+}
+.footer{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0px;
+}
+.insta{
+    color: red;
+}
+.teg{
+    color: dodgerblue;
+}
+.yt{
+    color: red;
+}
+.fc{
+    color: dodgerblue;
+}
+.gogo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.apple{
+    color: black;
+    font-size: 40px;
+}
+.gogleplay{
+    color: rgb(0,200,255);
+}
+.footerliitems1{
+    font-size: 40px;
+}
+.footer__inner{
+    width: 100%;
+    height: 1px;
+    background: gray;
+    margin-top: 70px;
+    display: flex;
+    gap: 60px;
+    font-size: 16px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    
+}
+.footer__inner p{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: gray;
+}
+
+@media screen and (max-width: 1000px) {
+    .footeritems2{
+        margin-bottom: 40px;
+    }
+    .footer__inner{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .footeritems2{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width:660px) {
+    .footerliitems{
+        font-size: 13px;
+    }
+    .footerliitems h2{
+        font-size: 15px;
+    }
+    .Footer{
+        padding: 20px;
+        height: 250px;
+        gap: 10px;
+        margin-top: 0px;
+    }
+    .footerbtn{
+        display: none;
+    }
+    .footeritems2{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:400px){
+    .footeritems2{
+        margin-bottom: 40px;
+    }
+    
+}
