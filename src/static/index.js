@@ -1,52 +1,58 @@
-
+import c1 from "../assets/cart-1.jpg"
+import c2 from "../assets/cart-2.jpg"
+import c3 from "../assets/car-3.jpg"
+import c4 from "../assets/cart-4.jpg"
+import c5 from "../assets/cart-5.jpg"
+import c6 from "../assets/cart-6.jpg"
+import c7 from "../assets/cart-7.jpg"
  export const PRODUCTS = [
         {
             id: "pro-1",
-            title: "Lenovo thinkplus lp12 simsiz quloqchinlari, TWS",
-            price: 199_000,
+            title: "Velosiped trenajori GF-12B",
+            price: 2_100_000 ,
             category: "texnika",
-            url: "https://images.uzum.uz/clf4iolennt1kt4dbqog/t_product_540_high.jpg#1701443777408"
+            url: c1
         },
         {
             id: "pro-2",
-            title: "Geympad Sony DualSense simsiz, PlayStation 5 uchun",
-            price: 869_000,
+            title: "Tolstovka Terra Pro AW23CA2N-2-19237",
+            price: 2_699_000,
             category: "texnika",
-            url: "https://images.uzum.uz/clir1ql6sfhjvlnagn0g/t_product_540_high.jpg#1701443777409"
+            url: c2
         },
         {
             id: "pro-3",
-            title: "Kir yuvish kukuni Oila tanlovi, 3 kg, Ayoz tazeligi, Avtomat",
-            price: 42_000,
+            title: "Yangi yil uchun sun'iy archa, bayram uchun ajoyib bezak, 120 sm dan 180 sm gacha",
+            price: 219000,
             category: "hojalik-tovarlari",
-            url: "https://images.uzum.uz/clb1d15ennt861ipub40/t_product_540_high.jpg#1701443913235"
+            url: c3
         },
         {
             id: "pro-4",
-            title: "Ryukzak eko-charmdan, uniseks, universal",
+            title: "Idishlarni yuvish uchun vosita Fairy, limon, 450 ml",
             price: 249_000,
             category: "maktab",
-            url: "https://images.uzum.uz/cj9n9cjk9fq5pecuq1ng/original.jpg"
+            url: c4
         },
         {
             id: "pro-5",
-            title: "Mikser Braun HM1070WH",
+            title: "100% quyma ko'k archa Qirolicha",
             price: 798_000,
             category: "texnika",
-            url: "https://images.uzum.uz/cjjj0kkjvf2ofbh7oh5g/original.jpg"
+            url: c5
         },
         {
             id: "pro-6",
-            title: "Go'sht maydalagich Ardesto MGL-1790R- 1700Вт/1.6 kg-min / pomidor, sharbat / qora",
+            title: "Qiz bolalar uchun nachosli sport kiyimi AZZAZO",
             price: 699_000,
             category: "oshxona",
-            url: "https://images.uzum.uz/ck58ll4jvf2qegt46pjg/original.jpg"
+            url: c6
         },
         {
             id: "pro-7",
-            title: "Dazmol Haley HY-274",
+            title: "Beko WRE5411BWW kir yuvish mashinasi",
             price: 275_000,
             category: "texnika",
-            url: "https://images.uzum.uz/cjnddisvutv1g2rj4mvg/original.jpg"
+            url: c7
         },
     ]

@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 import { IoMdHeartEmpty } from "react-icons/io";
 import { BsCart2 } from "react-icons/bs";
 import { IoHomeOutline } from "react-icons/io5";
+
 function Navbar({data}) {
   const [value, setValue ] = useState("")
   const [searchDta, setSearchData] = useState([])

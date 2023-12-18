@@ -43,7 +43,7 @@ const handleSubmit = (e)=>{
             {
                 data?.map(el=><div key={el.id} className='cart__item'>
                      <div className='cart_item_left'>
-                    <img src={el.url} width={80} alt="" />
+                    <img src={el.url} width={70} alt="" />
                     <div>
 
                       <h4>{el.title}</h4>
