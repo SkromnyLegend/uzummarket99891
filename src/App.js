@@ -11,12 +11,15 @@ import { PRODUCTS  } from './static';
 import SingleRoute from './router/single-route/SingleRoute';
 import { Routes,Route } from 'react-router-dom';
 import Notdef from './router/notdifend/Notdef';
+
+
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div className="App">
       <SubHeader/>
     <Navbar data={PRODUCTS}/>
-    <NavbarBottom/>
     <Routes>
       <Route path='*' element={<Notdef/>} />
       <Route path='/' element={<Home  data={PRODUCTS}/>}/>
@@ -26,6 +29,17 @@ function App() {
       <Route path='/product/:id' element={<SingleRoute data={PRODUCTS}/>}/>
     </Routes>
     <Footer/>
+    <ToastContainer
+    position="top-center"
+    autoClose={5000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="dark"/>
 
     </div>
   );

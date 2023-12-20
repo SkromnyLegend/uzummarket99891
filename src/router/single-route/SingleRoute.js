@@ -13,7 +13,7 @@ function SingleRoute({data}) {
 
     useEffect(()=> {
         window.scrollTo(0,0)
-    })
+    }, [params])
 
     if(!oneItem){
         return <Notdef/>

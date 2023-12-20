@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import "./Card1122.css"
 import { FaTrash } from "react-icons/fa";
-import { incCart } from '../../context/cartSlice';
+import { incCart, removeAllCart } from '../../context/cartSlice';
 import { decCart } from '../../context/cartSlice';
 import { removeCart } from '../../context/cartSlice';
 import { useDispatch } from 'react-redux';
+import { Link} from 'react-router-dom';
 function CartProduct({data}) {
   
   const dispatch = useDispatch()
@@ -35,6 +36,7 @@ const handleSubmit = (e)=>{
   let api = new XMLHttpRequest()
   api.open("GET", url, true)
   api.send()
+  dispatch(removeAllCart())
 }
 
   return (
@@ -42,7 +44,7 @@ const handleSubmit = (e)=>{
         <div className="card-prod">
             {
                 data?.map(el=><div key={el.id} className='cart__item'>
-                     <div className='cart_item_left'>
+                     <Link to={`/product/${el.id}`} className='cart_item_left'>
                     <img src={el.url} width={70} alt="" />
                     <div>
 
@@ -50,7 +52,7 @@ const handleSubmit = (e)=>{
                       <p>Ktegoriya: {el.category}</p>
 
                         </div> 
-                        </div>
+                        </Link>
                             <div className="cart_item_right">
                             <div className="cart__counter">
                                 <button disabled={el.quantity <= 1} onClick={()=> dispatch(decCart(el))}>-</button>

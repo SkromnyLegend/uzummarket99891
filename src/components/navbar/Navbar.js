@@ -44,14 +44,16 @@ function Navbar({data}) {
     value.trim() &&  <div className="nav_search_dro">
       <p>Natija: {searchDta.length} ta</p>
 {
-  searchDta?.slice(0,5) .map((el)=><div key={el.id} className='nav__item_search'>
+  searchDta?.slice(0,5) .map((el)=><NavLink to={`/product/${el.id}`} 
+  onClick={()=> setValue("")}
+  key={el.id} className='nav__item_search'>
      <img src={el.url} width={100}  alt="" />
      <div>
       <p>{el.title}</p>
       <b style={{color: "red"}}>{el.price?.brm()}so'm</b>
      </div>
      
-      </div>)
+      </NavLink>)
 }
 {
 
