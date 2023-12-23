@@ -5,7 +5,6 @@ import Home from "./router/home/Home"
 import Login from "./router/login/Login"
 import Wishes from "./router/wishes/Wishes"
 import Cart from "./router/cart/Cart"
-import NavbarBottom from './components/navbar-bottom/NavbarBottom';
 import Footer from './components/footer/Footer';
 import { PRODUCTS  } from './static';
 import SingleRoute from './router/single-route/SingleRoute';
@@ -13,11 +12,18 @@ import { Routes,Route } from 'react-router-dom';
 import Notdef from './router/notdifend/Notdef';
 
 
+
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Admin from './router/admin/Admin';
+import Auth from './router/auth/Auth';
+import SnowFall from './snowfall/SnowFall';
 function App() {
   return (
+    
     <div className="App">
+      
       <SubHeader/>
     <Navbar data={PRODUCTS}/>
     <Routes>
@@ -27,6 +33,9 @@ function App() {
       <Route  path='/wishes' element={<Wishes/>}/>
       <Route  path='/Cart' element={<Cart/>}/>
       <Route path='/product/:id' element={<SingleRoute data={PRODUCTS}/>}/>
+      <Route path='/' element={<Auth/>}>
+      <Route path='/Admin/*' element={<Admin/>}/>
+      </Route>
     </Routes>
     <Footer/>
     <ToastContainer
@@ -40,6 +49,8 @@ function App() {
     draggable
     pauseOnHover
     theme="dark"/>
+  <SnowFall/>
+    
 
     </div>
   );

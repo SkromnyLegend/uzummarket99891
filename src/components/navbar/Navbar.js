@@ -2,13 +2,16 @@ import React, {useState,useEffect} from 'react'
 import "./Navbar.css"
 import { IoIosMenu } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
-import { FaRegUser } from "react-icons/fa6";
+import { CiUser } from "react-icons/ci";
 import { NavLink } from 'react-router-dom';
 import { IoMdHeartEmpty } from "react-icons/io";
 import { BsCart2 } from "react-icons/bs";
 import { IoHomeOutline } from "react-icons/io5";
+import { useLocation } from "react-router-dom";
+
 
 function Navbar({data}) {
+  
   const [value, setValue ] = useState("")
   const [searchDta, setSearchData] = useState([])
   
@@ -21,6 +24,11 @@ function Navbar({data}) {
       setSearchData([])
     }
     }, [value])
+    const {pathname} = useLocation()
+
+  if(pathname.includes("login") || pathname.includes("admin")) {
+      return <></>
+  }
   return (
     <div className='container'>
 <div className="navbar">
@@ -75,8 +83,8 @@ function Navbar({data}) {
   </NavLink>
 </li>
 <li className='nav__item'>
-  <NavLink to={"/login"}> 
-  <FaRegUser/>
+  <NavLink to={"/admin"}> 
+  <CiUser/>
   <span>Kirish</span>
   </NavLink>
 </li>

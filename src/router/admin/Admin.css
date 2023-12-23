@@ -1,0 +1,19 @@
+.admin{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+.admin__links{
+    height: 100vh;
+    background: var(--bg-py);
+    padding: 24px;
+    color: #fff;
+}
+.admin__links a:active{
+  width: 200px;
+  height: 30px;
+  background: red;
+}
+.admin__content{
+    padding: 24px;
+}

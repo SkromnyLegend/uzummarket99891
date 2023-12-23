@@ -2,6 +2,7 @@ import React from 'react'
 import {useSelector} from "react-redux"
 import Empty from '../../components/emty/Empty'
 import Products from '../../components/products/Products'
+import sal from "../../assets/hearts.cf414be.png"
 
 
 function Wishes() {
@@ -12,7 +13,7 @@ function Wishes() {
         !likes.length ?
 
         <Empty
-         url="https://uzum.uz/static/img/hearts.cf414be.png"
+         url={sal}
         title="Sizga yoqqanini qo'shing"
         desc="Mahsulotdagi belgisini bosing. akauntingizni kiriting va barcha saralanganlar saqlanib qoladi"
         btnTitel="Akkountga kirish"

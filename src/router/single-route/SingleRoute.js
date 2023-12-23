@@ -20,6 +20,7 @@ function SingleRoute({data}) {
     }
   return (
     <>
+  
     <div className='container single__route'>
       <img className='route__img' width={300} src={oneItem.url} alt="" />
       <div className="single__route2">
@@ -27,7 +28,6 @@ function SingleRoute({data}) {
       <h1 className='h1111'>{oneItem.price?.brm()} so'm</h1>
       <br />
       <br /> 
-      <p className='lorem'>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque fugiat, tenetur quasi maxime ea nesciunt sint voluptatem sequi itaque veritatis?</p>
       </div>
     </div>
     <br />

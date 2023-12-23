@@ -15,9 +15,9 @@ function Products({ data}) {
   return (
     <>
     <div className="products__wrapper">
-      
+    {/* .slice(0 ,count*AMOUNT) */}
         {
-            data?.slice(0 ,count*AMOUNT)?.map((el) => <div key={el.id} className="products__card">
+            data?.map((el) => <div key={el.id} className="products__card">
             <Link to={`/product/${el.id}`} className="products__image">
               <img src={el.url} alt="" />
             </Link>
@@ -33,7 +33,7 @@ function Products({ data}) {
             </div>
             <div onClick={()=> dispath(toogleLike(el))} className="products__wishes" >
               {
-                salom?.some(item => item.id === el.id) ? <FaHeart/>  :   <FaRegHeart className='oo'/>             
+                salom?.some(item => item.id === el.id) ? <FaHeart className='oo'/>  :   <FaRegHeart/>             
 
               }
      
@@ -48,11 +48,11 @@ function Products({ data}) {
           </div>)
         }
     </div>
-    {
+    {/* {
       data.length > count*AMOUNT ?
 <button onClick={()=>setCount(p => p+1)}>Yana Ko'proq Ko'rish</button>
 : <></>
-    }
+    } */}
     
     
     </>

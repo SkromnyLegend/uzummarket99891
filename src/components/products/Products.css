@@ -94,7 +94,9 @@
     color: #555;
 }
 
-
+.products__wishes{
+    color: var(--bg-py);
+}
 
 @media screen and (max-width:550px) {
     .products__wrapper{

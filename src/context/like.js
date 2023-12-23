@@ -14,6 +14,7 @@ if(index < 0){
 
 }else{
     state.value = state.value.filter((el)=> el.id !== action.payload.id)
+    localStorage.setItem("likes", JSON.stringify(state.value))
 }
 
             

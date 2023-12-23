@@ -1,17 +1,19 @@
-
+.login{
+    margin-top: 100px;
+}
 .inner__inner{
  margin: auto;
  width: 420px;
  height: 450px;
  background: #fff;
- padding: 7px;
- padding-left: 20px;
+ padding: 30px;
+ padding-left: 40px;
  box-shadow: 0px 0px 10px 1px gray;
  border-radius: 10px;
  margin-top: 20px;
 }
 .loginn{
-    padding-left: 340px;
+    padding-left: 300px;
     padding-top: 10px;
     font-size: 30px;
 }
@@ -24,7 +26,9 @@
     border-radius: 10px;
     border: solid 1px gray;
     font-size: 26px;
-    padding-left: 20px;
+    padding-left: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
 
 }
 .hoja{
@@ -33,39 +37,64 @@
     color: #fff;
     font-size: 16px;
     background: var(--bg-py);
-    margin-top: 20px;
+    margin-top: 40px;
     border: none;
     border-radius: 10px;
+    margin-left: 10px;
+}
+.gg{
+    padding-left: 30px;
+}
+.p{
+    padding-left: 25px;
+}
+.homr__btn{
+    width: 200px;
+    background: var(--bg-py);
+    color: #fff;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-left: 60px;
+    margin-top: 40px;
 }
 @media screen and (max-width: 900px) {
     .inner__inner{
-        width: 320px;
-        height: 270px;
-        margin-top: 50px;
+        width: 300px;
+        height: 350px;
     }
-    .pre{
-        display: none;
-    }
-    .loginn{
-        padding-left: 250px;
-        padding-top: 10px;
-        font-size: 20px;
-    }
+ .login{
+    margin-top: 50px;
+ }
+ 
     .gg{
         font-size: 18px;
+        padding-left:3px;
     }
     .p{
-        font-size: 13px;
+        font-size: 12px;
+        padding-left:3px;
     }
     .inp__loginn{
-        width: 80%;
+        width: 90%;
         height: 30px;
-        font-size: 18px;
-        padding-left: 30px;
+        font-size: 16px;
+        padding-left: 36px;
     
     }
     .hoja{
-        width: 80%;
+        width: 70%;
+        margin-left: 30px;
+        margin-top: 20px;
         height: 30px;
+        font-size: 13px;
     }
+    .homr__btn{
+        width: 60%;
+        margin-left: 40px;
+        margin-top: 20px;
+        height: 30px;
+        font-size: 11px;
+        }
 }
