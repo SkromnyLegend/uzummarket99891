@@ -83,7 +83,7 @@ function Navbar({data}) {
   </NavLink>
 </li>
 <li className='nav__item'>
-  <NavLink to={"/admin"}> 
+  <NavLink to={"/admin/create-product"}> 
   <CiUser/>
   <span>Kirish</span>
   </NavLink>
