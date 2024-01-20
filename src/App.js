@@ -18,7 +18,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Admin from './router/admin/Admin';
 import Auth from './router/auth/Auth';
-// import SnowFall from './snowfall/SnowFall';
+import SnowFall from './snowfall/SnowFall';
 function App() {
   return (
     
@@ -49,7 +49,7 @@ function App() {
     draggable
     pauseOnHover
     theme="dark"/>
-  {/* <SnowFall/> */}
+  <SnowFall/>
     
 
     </div>
