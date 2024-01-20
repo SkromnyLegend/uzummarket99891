@@ -33,7 +33,7 @@ function Navbar({data}) {
     <div className='container'>
 <div className="navbar">
   <h2 className='nav__logo'>
-    <NavLink to={"/"}>Xilola market </NavLink>
+    <NavLink to={"/"}>Uzum market </NavLink>
   </h2>
   <button className='nav__category'>
     <span>Katalog</span>
